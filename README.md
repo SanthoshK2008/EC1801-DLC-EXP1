@@ -20,6 +20,7 @@ exp1_boolean_min_tb.v	Verilog testbench
 exp1_boolean_min.vcd	VCD waveform dump generated during simulation
 
 ## Verilog Program
+```
 module fun (
 input wire A, 
 input wire B, 
@@ -27,11 +28,11 @@ output wire F
 ); 
 assign F = (~A) | B ;    // F = A' + B 
 endmodule
-
+```
 
 
 ## TestBench Program
-
+```
 module tb;
     reg A, B;
     wire F;
@@ -59,7 +60,7 @@ module tb;
     end
 
 endmodule
-
+```
 
 
 
@@ -67,10 +68,7 @@ endmodule
 
     
 ## Truth Table
- 
-<img width="795" height="311" alt="image" src="https://github.com/user-attachments/assets/dd4ba5b9-016b-4ae5-a693-f309c60c4c0e" />
-
-## Simulation Procedure
+ <img width="622" height="675" alt="WhatsApp Image 2026-11-02 at 8 14 25 AM" src="https://github.com/user-attachments/assets/f5cd3ad9-5552-4def-800f-7ccb41131cfc" />
 STEP 1 – Open Terminal
 Open a terminal in the experiment folder.
 bash
@@ -110,6 +108,9 @@ o	F
 5.	Verify that F = 1 whenever B and D are equal.
 6.	Verify that F = 0 whenever B and D are different.
 The waveform should agree with the truth table.
+<img width="598" height="369" alt="image" src="https://github.com/user-attachments/assets/c2ce7df8-1bba-403e-b29a-fe31e8663d49" />
+
+
  
 ### Expected Result
 The Boolean function
@@ -118,8 +119,8 @@ was minimized to F=B'D'+BD.
 and successfully implemented using Verilog HDL.
 
 ## OUTPUT
+<img width="1366" height="1157" alt="image" src="https://github.com/user-attachments/assets/eeab18e6-ec4e-488d-8f17-19d438dacc03" />
 
-<img width="1920" height="1080" alt="Screenshot (8)" src="https://github.com/user-attachments/assets/6514011e-cce7-4b06-b346-1d31acb0f771" />
 
 
 The design was compiled and simulated using Synopsys VCS, and the functionality was verified using DVE waveform analysis.
